@@ -9,23 +9,23 @@ If you are in love with your terminal then this application is only made for you
 
 **List of Commands** 
 
-Command for adding a new job
+__Command for adding a new job__
 ```
 node app.js add --company='company_name' --post='post_name' --jobId='job_id'
 ```
 
-Command for reading existing job in the database
+__Command for reading existing job in the database__
 ```
 node app.js read --company='company_name'
 ```
 
-Command for reading the status of the job
+__Command for reading the status of the job__
 ```
 node app.js update ---company='company_name' post='post_name' --status='updated_status'
 ```
 
 
-Command for listing all the jobs along with their status
+__Command for listing all the jobs along with their status__
 ```
 node app.js list 
 ```
