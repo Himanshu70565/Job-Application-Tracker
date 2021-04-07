@@ -72,6 +72,8 @@ const listJobs = () => {
           "      " +
           chalk.blue(job.post) +
           "     " +
+          chalk.blue(job.jobId) +
+          "     " +
           chalk.red(job.status) +
           "😭😭😭"
       );
@@ -81,6 +83,8 @@ const listJobs = () => {
           "      " +
           chalk.blue(job.post) +
           "     " +
+          chalk.blue(job.jobId) +
+          "     " +
           chalk.green(job.status) +
           "😎😎😎"
       );
@@ -89,6 +93,8 @@ const listJobs = () => {
         chalk.underline(job.company) +
           "      " +
           chalk.blue(job.post) +
+          "     " +
+          chalk.blue(job.jobId) +
           "     " +
           chalk.yellow(job.status) +
           "🙄🙄🙄"

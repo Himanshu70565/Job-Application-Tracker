@@ -57,8 +57,8 @@ yargs.command({
       demandOption: true,
       type: "string",
     },
-    post: {
-      describe: "post applied",
+    jobId: {
+      describe: "job Id",
       demandOption: true,
       type: "string",
     },
@@ -69,7 +69,7 @@ yargs.command({
     },
   },
   handler(argv) {
-    jobDatabase.updateJob(argv.company.toLowerCase(), argv.jobId.toLowerCase(), argv.status.toLowerCase());
+    jobDatabase.updateJob(argv.company.toLowerCase(), argv.jobId, argv.status.toLowerCase());
   },
 });
 
