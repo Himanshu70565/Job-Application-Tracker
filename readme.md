@@ -38,3 +38,11 @@ __Command for listing all the jobs along with their status__
 node app.js list 
 ```
 ![alt text](/media/img/list.PNG)
+
+<hr />
+
+<h6>Packages Used :</h6>
+
+>Yargs : Yargs module is used for creating your own command-line commands in node.js and helps in generating an elegant user interface. This module makes command-line arguments flexible and easy to use.
+
+>Chalk : Yargs command are decorated with the help of chalk module. 
