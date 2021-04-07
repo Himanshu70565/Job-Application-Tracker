@@ -20,10 +20,14 @@ const addJob = (company, post, jobId) => {
   } else {
     console.log(chalk.red.underline("Job Application already exists"));
   }
+
+  readJob(company);
+
 };
 
 const readJob = (company) => {
   const jobs = loadJobs();
+  
   const companyJobs = jobs.filter((job) => job.company === company);
 
   // Printing Company Name in top
@@ -35,23 +39,39 @@ const readJob = (company) => {
       job.post=job.post.toUpperCase();
       if (job.status === "rejected") {
         console.log(
-          chalk.blue(job.post + "  " + job.jobId + "  " + job.date) +
-            "    " +
-            chalk.red("Rejected 😭😭😭")
+            chalk.white(job.post) +
+            "     " +
+            chalk.blue(job.jobId) +
+            "     " +
+            chalk.blue(job.date) +
+            "     " +
+            chalk.red(job.status) +
+            "😭😭😭"
         );
       } else if (job.status === "accepted") {
         console.log(
-          chalk.blue(job.post + "  " + job.jobId + "  " + job.date) +
-            "    " +
-            chalk.green("Accepted 😎😎😎")
+            chalk.white(job.post) +
+            "     " +
+            chalk.blue(job.jobId) +
+            "     " +
+            chalk.blue(job.date) +
+            "     " +
+            chalk.green(job.status) +
+            "😎😎😎"
         );
       } else {
         console.log(
-          chalk.blue(job.post + "  " + job.jobId + "  " + job.date) +
-            "    " +
-            chalk.yellow(job.status + " 🙄🙄🙄")
+            chalk.white(job.post) +
+            "     " +
+            chalk.blue(job.jobId) +
+            "     " +
+            chalk.blue(job.date) +
+            "     " +
+            chalk.yellow(job.status) +
+            "🙄🙄🙄"
         );
       }
+      
     });
   } else {
     console.log(chalk.underline.blue("You have never applied to this company"));
@@ -153,6 +173,9 @@ const updateJob = (company, jobId, status) => {
       "Use node app.js list --company=[],to find all application to that company"
     );
   }
+
+  readJob(company);
+
 };
 
 const loadJobs = () => {

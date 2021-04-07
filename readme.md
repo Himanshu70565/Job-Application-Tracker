@@ -13,19 +13,25 @@ __Command for adding a new job__
 ```
 node app.js add --company='company_name' --post='post_name' --jobId='job_id'
 ```
+![alt text](/media/add.PNG)
+
 
 __Command for reading existing job in the database__
 ```
 node app.js read --company='company_name'
 ```
+![alt text](/media/read.PNG)
+
 
 __Command for reading the status of the job__
 ```
 node app.js update ---company='company_name' post='post_name' --status='updated_status'
 ```
+![alt text](/media/update.PNG)
 
 
 __Command for listing all the jobs along with their status__
 ```
 node app.js list 
 ```
+![alt text](/media/list.PNG)
