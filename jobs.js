@@ -58,8 +58,26 @@ const readJob = (company) => {
   }
 };
 
+
+const printHeading=()=>{
+  console.log(
+    chalk.underline.white('COMPANY') +
+      "      " +
+      chalk.white('POST APPLIED') +
+      "     " +
+      chalk.white('JOB ID') +
+      "     " +
+      chalk.white('DATE APPLIED') +
+      "     " +
+      chalk.white('STATUS')
+  );
+  console.log();
+}
+
 const listJobs = () => {
   const jobs = loadJobs();
+
+  printHeading();
 
   jobs.map((job) => {
     
@@ -74,6 +92,8 @@ const listJobs = () => {
           "     " +
           chalk.blue(job.jobId) +
           "     " +
+          chalk.blue(job.date) +
+          "     " +
           chalk.red(job.status) +
           "😭😭😭"
       );
@@ -84,6 +104,8 @@ const listJobs = () => {
           chalk.blue(job.post) +
           "     " +
           chalk.blue(job.jobId) +
+          "     " +
+          chalk.blue(job.date) +
           "     " +
           chalk.green(job.status) +
           "😎😎😎"
@@ -96,6 +118,8 @@ const listJobs = () => {
           "     " +
           chalk.blue(job.jobId) +
           "     " +
+          chalk.blue(job.date) +
+          "     " +
           chalk.yellow(job.status) +
           "🙄🙄🙄"
       );
@@ -106,6 +130,9 @@ const listJobs = () => {
 
 const updateJob = (company, jobId, status) => {
   const jobs = loadJobs();
+
+  printHeading();
+
   let response = jobs.find((job) => {
     if (
       job.status !== "rejected" &&
