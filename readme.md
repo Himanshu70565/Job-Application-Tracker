@@ -1,13 +1,15 @@
 <h1 align="center">Job Application Tracker</h1>
+
+<h6>Description</h6>
 Do you have no idea of how much job you have applied ? .Then this _Job Application Tracker_ can help you out. Here you can keep track of all the job application that you have applied for.
 
 <hr />
 
-**Who can use it ?**
+<h4>Who can use it ?</h4>
 If you are in love with your terminal then this application is only made for you . 
 
 
-**List of Commands** 
+</h4>List of Commands</h4>
 
 __Command for adding a new job__
 ```
