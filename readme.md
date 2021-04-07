@@ -8,8 +8,9 @@ Do you have no idea of how much job you have applied ? .Then this _Job Applicati
 <h4>Who can use it ?</h4>
 If you are in love with your terminal then this application is only made for you . 
 
+<hr />
 
-</h4>List of Commands</h4>
+<h4>List of Commands</h4>
 
 __Command for adding a new job__
 ```
