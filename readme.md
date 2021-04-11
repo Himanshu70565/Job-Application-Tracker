@@ -1,7 +1,7 @@
 <h1 align="center">Job Application Tracker</h1>
 
 <h6>Description</h6>
-Do you have no idea of how much job you have applied ? .Then this _Job Application Tracker_ can help you out. Here you can keep track of all the job application that you have applied for.
+Do you have no idea of how much job you have applied ? .Then this <b>Job Application Tracker</b> can help you out. Here you can keep track of all the job application that you have applied for.
 
 <hr />
 
